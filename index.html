@@ -1,29 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 <style>
+
 
 #profilepic{
  border-radius:10%;
  width:170px;
  height:170px;
+
+}
+
+#linkedinIcon{
+    position: relative;
+    width: 100px;
+     height: 100px;
+     margin-left: 0 0 0 auto
+}
+#emailIcon{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto
 }
 
 .skills-list:hover{
    transform: scale(1.05);   
    transition: transform 0.3s ease-in-out;
 }
-    
+
 </style>
 </head>
 <body>
     <header>
         <h1>Zwelibanzi Ntanzi</h1><br>
-   <img id="profilepic" src= "./Images/ProfilePic.jpeg" alt="profilepicture"
+   <img id="profilepic" src="images/ProfilePic.jpeg" alt="profilepicture"
+	  
+          
           >
 
         <p>Hi there! I'm a training software engineer with a strong background in client service delivery, where I had the privilege of leading teams and ensuring exceptional outcomes. My passion lies in programming, problem-solving, and continuously learning new technologies to enhance my skills. I thrive on challenges that push me to grow and innovate, and I'm committed to upskilling myself to stay ahead in this ever-evolving field. Welcome to my portfolio, where I share my journey, skills, and aspirations!.</p>
@@ -32,7 +49,7 @@
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-             <li class="skills-list">HTML</li>
+            <li class="skills-list">HTML</li>
             <li class="skills-list">CSS</li>
             <li class="skills-list">JavaScript</li>
             <li class="skills-list">Microsoft SQL Server </li>
@@ -48,8 +65,8 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:ZwelibanziNtanzi@gmail.com">ZwelibanziNtanzi@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/zwelibanzi-ntanzi/" target="_blank"> LinkedIn</a></p>
+        <a id="emaillink" href="mailto:ZwelibanziNtanzi@gmail.com" target="_blank"><img id="emailIcon" src="Images/email.png" alt="Email"></a>
+        <a id="LinkedIn" href="https://www.linkedin.com/in/zwelibanzi-ntanzi/" target="_blank"><img id="linkedinIcon" src="Images/linkedin.png"  alt="LinkedIn"></a>
         <p><a href="https://drive.google.com/file/d/1iBqypmCqMQYdgLrsFf41N6uISxnM9n7N/view?usp=sharing" target="_blank">View My CV</a></p>
     </section>
 
@@ -57,4 +74,4 @@
         <p>© [Zwelibanzi Ntanzi], 2025</p>
     </footer>
 </body>
-</html>
+</html
