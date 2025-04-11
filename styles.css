@@ -38,16 +38,26 @@ ul li {
 a {
     color: #007bff;
     text-decoration: none;
+    
 }
 
+#linkedinIcon:hover {
+    transform:scale(1.2);
+    
+}
+#emailicon:hover {
+    transform:scale(1.1);
+}
 a:hover {
-    text-decoration: underline;
-    color: rebeccapurple;
+    
+    color:blue;
+    font-weight: bold;
+    transform:scale(1.2);
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color:#AE4C06;
+    background-color: #f4f4f4;
     border-top: 1px solid #ddd;
 }
