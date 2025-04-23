@@ -81,6 +81,39 @@
             <button type="submit">Submit</button>
           </form>  
 
+
+
+        <script>
+            function validateForm() {
+              const name = document.getElementById("name").value.trim();
+              const email = document.getElementById("email").value.trim();
+              const message = document.getElementById("message").value.trim();
+        
+              // Check if name is empty
+              if (name === "") {
+                alert("Please enter your name.");
+                return false; // Prevent form submission
+              }
+        
+              // Validate email format (basic pattern)
+              const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false; // Prevent form submission
+              }
+        
+              // Check if message is empty
+              if (message === "") {
+                alert("Please enter your message.");
+                return false; // Prevent form submission
+              }
+        
+              // If all validations pass
+              alert("Form submitted successfully!");
+              return true;
+            }
+          </script>
+
         <a id="emaillink" href="mailto:ZwelibanziNtanzi@gmail.com" target="_blank"><img id="emailIcon" src="Images/email.png" alt="Email"></a>
         <a id="LinkedIn" href="https://www.linkedin.com/in/zwelibanzi-ntanzi/" target="_blank"><img id="linkedinIcon" src="Images/linkedin.png"  alt="LinkedIn"></a>
         <p><a href="https://drive.google.com/file/d/1iBqypmCqMQYdgLrsFf41N6uISxnM9n7N/view?usp=sharing" target="_blank">View My CV</a></p>
