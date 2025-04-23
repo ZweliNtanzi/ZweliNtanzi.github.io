@@ -1,24 +1,73 @@
+
+/* Default styles */
+header {
+    position: relative;
+    background: linear-gradient(45deg, #001aab, #0444ce);
+    background-color:#001aab;
+    color: #fff;
+    border-radius: 30px;
+    padding: 50px;
+    text-align: center;
+}
+  
+  /* Media query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    header {
+        position: relative;
+        background: linear-gradient(45deg, #001aab, #0444ce);
+        background-color:#001aab;
+        color: #fff;
+        border-radius: 30px;
+        padding: 50px;
+        text-align: center;
+    }
+      
+    h1 {
+      font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+  
+    #profilepic {
+      width: 100px; /* Adjust image size for smaller screens */
+      height: 100px;
+    }
+  }
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #000000;
+    transition: background-color 0.3s, color 0.s;
 }
 
-header {
-    background-color:#AE4C06;
-    color: #fff;
-    padding: 50px;
-    text-align: center;
-}
+ h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #eee;
+ }
+  
+  h1 {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #ffffff;
+    transition: color 0.15s;
+  }
+  
+  h1:hover {
+    animation: bounce 0.8s ease-in-out;
+    
+  }
+
 
 section {
     padding: 20px;
     margin: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #525151;
+    border-radius: 10px;
 }
 
-h1, h2 {
+ h2 {
     color: #333;
 }
 
@@ -33,6 +82,7 @@ ul li {
     margin: 5px 0;
     padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 a {
@@ -53,11 +103,52 @@ a:hover {
     color:blue;
     font-weight: bold;
     transform:scale(1.2);
+    
 }
+
+#dark-mode-toggle{
+    position: relative;
+    position: absolute;
+    top: 10px; /* Distance from the top of the header */
+    right: 10px; /* Distance from the right side of the header */
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #333333; /* Dark mode background */
+    color: #0d0d0d; /* Dark mode text */
+  }  
+ .dark-mode h2 {
+    background-color: #333333; /* Dark mode background */
+    color: #f5f5f5; /* Dark mode text */
+  }  
+.dark-mode ul li {
+    background: #444; /* Dark mode list item background */
+    color: #fff; /* Dark mode list item text */
+  }
+.dark-mode a {
+    color: #1e90ff; /* Dark mode link color */
+  }
+
+  .dark-mode form {
+    color: #1e90ff; /* Dark mode link color */
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #AE4C06;
+    background-color: #001aab;
     border-top: 1px solid #ddd;
 }
