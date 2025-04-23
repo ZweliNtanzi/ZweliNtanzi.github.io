@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 <style>
 
-
 #profilepic{
  border-radius:10%;
  width:170px;
@@ -37,12 +36,18 @@
 </head>
 <body>
     <header>
+
+        <button id="dark-mode-toggle">Dark Mode</button>
+        
         <h1>Zwelibanzi Ntanzi</h1><br>
-   <img id="profilepic" src="./Images/ProfilePic.jpeg" alt="profilepicture" >
+   <img id="profilepic" src="images/ProfilePic.jpeg" alt="profilepicture">
+   
 
         <p>Hi there! I'm a training software engineer with a strong background in client service delivery, where I had the privilege of leading teams and ensuring exceptional outcomes. My passion lies in programming, problem-solving, and continuously learning new technologies to enhance my skills. I thrive on challenges that push me to grow and innovate, and I'm committed to upskilling myself to stay ahead in this ever-evolving field. Welcome to my portfolio, where I share my journey, skills, and aspirations!.</p>
     </header>
-
+         
+   
+  
     <section id="skills">
         <h2>Skills</h2>
         <ul>
@@ -62,13 +67,36 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <a id="emaillink" href="mailto:ZwelibanziNtanzi@gmail.com" target="_blank"><img id="emailIcon" src="./Images/email.png" alt="Email"></a>
-        <a id="LinkedIn" href="https://www.linkedin.com/in/zwelibanzi-ntanzi/" target="_blank"><img id="linkedinIcon" src="./Images/linkedin.png"  alt="LinkedIn"></a>
-        <p><a href="https://drive.google.com/file/d/1iBqypmCqMQYdgLrsFf41N6uISxnM9n7N/view?usp=sharing" target="_blank">View My CV</a></p>
-    </section>
 
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+          
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+          
+            <button type="submit">Submit</button>
+          </form>  
+
+        <a id="emaillink" href="mailto:ZwelibanziNtanzi@gmail.com" target="_blank"><img id="emailIcon" src="Images/email.png" alt="Email"></a>
+        <a id="LinkedIn" href="https://www.linkedin.com/in/zwelibanzi-ntanzi/" target="_blank"><img id="linkedinIcon" src="Images/linkedin.png"  alt="LinkedIn"></a>
+        <p><a href="https://drive.google.com/file/d/1iBqypmCqMQYdgLrsFf41N6uISxnM9n7N/view?usp=sharing" target="_blank">View My CV</a></p>
+
+
+    </section>
+     <script>
+     const toggleButton = document.getElementById('dark-mode-toggle');
+  
+     toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+     });
+   </script>
     <footer>
         <p>© [Zwelibanzi Ntanzi], 2025</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html
